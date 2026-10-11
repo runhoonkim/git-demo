@@ -38,7 +38,7 @@ select
   u.email,
   u.created_at 
 from users u
-order by u.created_at asc
+order by u.created_at desc
 limit 10;
 
 /*
@@ -66,7 +66,7 @@ select
   u.full_name,
   u.email 
 from users u
-where u.full_name like 'A%'
+where u.full_name like 'A%';
 
 /*
  * 6. Cheapest furniture
