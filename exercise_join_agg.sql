@@ -52,8 +52,7 @@ SELECT
 FROM orders o
 INNER JOIN users u ON u.id = o.user_id
 INNER JOIN products p ON p.id = o.product_id
-ORDER BY order_date ASC
-;
+ORDER BY order_date ASC;
 
 -- 3. Users who never ordered
 -- Write a query that returns the email of every user who has never placed a single order. 
