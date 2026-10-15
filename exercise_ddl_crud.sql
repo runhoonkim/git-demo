@@ -54,10 +54,8 @@ COMMIT;
 
 BEGIN;
 
-ALTER TABLE reviews 
+ALTER TABLE users 
 ADD COLUMN phone_number TEXT;
-
-SELECT * FROM reviews;
 
 COMMIT;
 
@@ -67,7 +65,7 @@ COMMIT;
 BEGIN;
 
 ALTER TABLE orders
-ADD CONSTRAINT max_quantity CHECK (quantity <= 10)
+ADD CONSTRAINT max_quantity CHECK (quantity <= 10);
 
 COMMIT;
 
